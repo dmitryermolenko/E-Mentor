@@ -31,6 +31,16 @@
   padding: 0 15px;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .header {
   padding-top: 37px;
   background-color: #10b582;
@@ -42,15 +52,10 @@
   align-items: center;
 }
 
-.main-navigation--vertical {
-  /*position: relative;*/
-  /*display: flex;*/
-  /*flex-direction: column-reverse;*/
-  /*align-items: center;*/
-}
 
 .main-navigation__logo {
   margin-top: 151px;
+  z-index: 1;
 }
 
 
@@ -77,4 +82,119 @@
 .site-navigation__link--active {
   padding-bottom: 5px;
   border-bottom: 1px dashed #fa9f42;
+}
+
+/* promo блок */
+
+.promo {
+  padding-bottom: 119px;
+  background-color: #10b582;
+}
+
+.page__promo {
+  margin-top: -120px;
+}
+
+.promo__content {
+  display: flex;
+}
+
+.promo__background {
+  position: relative;
+}
+
+.promo__background::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  width: 270px;
+  height: 330px;
+  background-image: url("img/promo-1.png");
+  background-repeat: no-repeat;
+}
+
+.promo__background::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 270px;
+  height: 330px;
+  background-image: url("img/promo-2.png");
+  background-repeat: no-repeat;
+}
+
+.offer {
+  width: 542px;
+  margin-left: 292px;
+  margin-bottom: 92px;
+  text-align: center;
+}
+
+.offer__title {
+  margin: 155px 0 0;
+  font-size: 58px;
+  line-height: 70px;
+  font-weight: 500;
+  color: #fdfdfd;
+}
+
+.offer__description {
+  width: 378px;
+  margin: 20px auto 50px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fdfdfd;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promo__social {
+  order: -1;
+}
+
+.social__link {
+  display: flex;
+  align-items: flex-start;
+}
+
+.button {
+  display: inline-block;
+  padding: 17px 49px 15px;
+  color: #fdfdfd;
+  border-radius: 0 20px;
+  text-decoration: none;
+  background-color: #10b582;
+}
+
+.button--accent {
+  background-color: #fa9f42;
+}
+
+.promo__link-down {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  color: #fdfdfd;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.promo__arrow-icon {
+  margin-bottom: 14px;
+  transform: rotate(180deg);
 }
