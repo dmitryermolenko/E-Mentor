@@ -260,9 +260,11 @@
   color: #353a5a;
 }
 
+/* teachers */
+
 .teachers {
   display: flex;
-  padding-bottom: 120px;
+  padding-bottom: 119px;
 }
 
 .teachers__description-column {
@@ -290,5 +292,24 @@
   margin-top: 10px;
   font-size: 14px;
   line-height: 18px;
+}
+
+/* education format */
+
+.education-format {
+  padding: 120px 0;
+  background-color: #10b582;
+}
+
+.education-format__content {
+  background-image: url("img/format-1.png"),
+                    url("img/format-2.png");
+  background-repeat: no-repeat;
+  background-position: top 30px left 15px, top left 45px
+}
+
+.education-format__offer {
+  margin-left: auto;
+  margin-right: 28px;
 }
 
