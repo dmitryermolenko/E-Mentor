@@ -123,26 +123,48 @@
 }
 
 .offer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 542px;
+  color: #fdfdfd;
+}
+
+.offer--align-center {
+  text-align: center;
+  align-items: center;
+}
+
+.promo__offer {
+  margin-top: 155px;
   margin-left: 292px;
   margin-bottom: 92px;
-  text-align: center;
 }
 
 .offer__title {
-  margin: 155px 0 0;
+  margin: 0;
   font-size: 58px;
   line-height: 70px;
   font-weight: 500;
-  color: #fdfdfd;
 }
 
 .offer__description {
-  width: 378px;
-  margin: 20px auto 50px;
+  width: 480px;
+  margin: 20px 0 0;
   font-size: 16px;
   line-height: 24px;
-  color: #fdfdfd;
+}
+
+.offer__description--margin-top {
+  margin-top: 15px;
+}
+
+.offer__button {
+  margin-top: 49px;
+}
+
+.offer--dark-font-color {
+  color: #353a5a;
 }
 
 .social {
@@ -165,11 +187,14 @@
 }
 
 .button {
+  box-sizing: border-box;
+  width: 230px;
   display: inline-block;
-  padding: 17px 49px 15px;
+  padding: 17px 20px 15px;
   color: #fdfdfd;
   border-radius: 0 20px;
   text-decoration: none;
+  text-align: center;
   background-color: #10b582;
 }
 
@@ -234,3 +259,36 @@
   text-align: center;
   color: #353a5a;
 }
+
+.teachers {
+  display: flex;
+  padding-bottom: 120px;
+}
+
+.teachers__description-column {
+  margin-right: 100px;
+}
+
+.teachers__offer {
+  margin-top: 60px;
+}
+
+.teachers__img-column {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  grid-gap: 30px;
+  width: 570px;
+}
+
+.teachers__card {
+  width: 170px;
+  margin: 0;
+  text-align: center;
+}
+
+.teachers__caption {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
