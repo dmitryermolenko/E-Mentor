@@ -364,4 +364,20 @@
   margin-top: 60px;
 }
 
+.banner {
+  height: 578px;
+  background-image: url("img/bg-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__content {
+  padding: 120px 0;
+}
+
+.banner__offer {
+  margin-left: auto;
+  margin-right: 28px;
+}
+
 
