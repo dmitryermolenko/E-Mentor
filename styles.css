@@ -169,12 +169,26 @@
 
 .social {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   row-gap: 30px;
+  column-gap: 25px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.social--vertical {
+  flex-direction: column;
+}
+
+.social__img {
+  fill: #353a5a;
+  opacity: .3;
+}
+
+.social__img--theme-light {
+  fill: #fdfdfd;
+  opacity: 1;
 }
 
 .promo__social {
@@ -378,6 +392,130 @@
 .banner__offer {
   margin-left: auto;
   margin-right: 28px;
+}
+
+/* footer */
+
+.page__footer {
+  margin-top: 119px;
+}
+
+.footer__divider {
+  position: relative;
+}
+
+.footer__divider::before {
+  position: absolute;
+  content: "";
+  width: 1440px;
+  height: 1px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #353a5a;
+  opacity: .1;
+}
+
+
+.footer__top {
+  position: relative;
+  padding: 80px 0 32px;
+}
+
+.footer__row {
+  display: flex;
+}
+
+.footer__description {
+  width: 260px;
+  margin-top: 21px;
+  margin-right: 110px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #353a5a;
+}
+
+.footer__social {
+  margin-top: 47px;
+}
+
+
+.service-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-navigation__column {
+  width: 200px;
+}
+
+.service-navigation__category {
+  margin: 0 0 28px 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #353a5a;
+}
+
+.service-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-navigation__item {
+  margin-bottom: 12px;
+}
+
+.service-navigation__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #353a5a;
+}
+
+.footer__bottom {
+  padding: 32px 0;
+}
+
+.footer__email {
+  width: 182px;
+}
+
+.footer__email-title {
+  margin: 0 0 30px 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #353a5a;
+}
+
+.footer__email-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  color: #353a5a;
+}
+
+.footer__email-link {
+  color: #353a5a;
+  text-underline-offset: 2px;
+}
+
+.footer__copyright {
+  margin: 0;
+  flex-grow: 2;
+  font-size: 14px;
+  line-height: 14px;
+  color: #353a5a;
+}
+
+.footer__link {
+  margin-left: 32px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #353a5a;
+  text-decoration: none;
 }
 
 
